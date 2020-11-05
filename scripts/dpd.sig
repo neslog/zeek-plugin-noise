@@ -5,12 +5,6 @@ signature dpd_noise {
 	ip-proto == udp
         payload /^\x01\x00\x00\x00/
 	
-
-	# ## TODO: Define the payload. When Bro sees this regex, on
-	# ## any port, it will enable your analyzer on that
-	# ## connection.
-	# ## payload /^NOISE/
-
 	enable "noise"
 }
 
